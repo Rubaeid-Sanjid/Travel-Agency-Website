@@ -106,3 +106,36 @@ header {
   border: none;
   width: 160px;
 }
+
+@media screen and (max-width: 600px) {
+    header, .banner {
+        padding: 0 20px;
+    }
+    .nav-links ul {
+        margin-top: 10px;
+    }
+    .nav-bar, .banner-form {
+        flex-direction: column;
+        margin-top: 30px;
+      }
+    .banner-photo{
+        height: auto;
+    }
+    .banner .banner-content{
+        padding: 20px;
+    }
+    .banner .banner-photo .banner-title{
+        font-size: 2rem;
+        margin-bottom: 10px;
+    }
+    .banner .banner-form {
+        margin-top: 0px;
+        margin-bottom: 15px;
+        width: 290px;
+    }
+    .banner .banner-form input {
+        padding: 20px;
+        width: auto;
+    }
+
+}
