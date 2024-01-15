@@ -134,29 +134,26 @@ header, .popular-tour-section, .destination-section {
     text-align: center;
     margin-bottom: 40px;
 }
-.destination-layout .row, .row2{
+.destination-layout .row{
     display: flex;
     margin-top: 20px;
     gap: 20px;
+    height: 250px;
 }
 .destination-layout .row img{
-    width: calc((100% - 20px) / 2);
-    height: 45vh;
-}
-.destination-layout .row2 img{
-    width: calc((100% - 20px - 20px) / 3);
-    height: 45vh;
+    height: 100%;
+    width: 100%;
 }
 
 /*Responsiveness for smaller devices*/
 @media screen and (max-width: 600px) {
-    header, .banner,.popular-tour-section {
+    header, .banner,.popular-tour-section, .destination-section {
         padding: 0 20px;
     }
     .nav-links ul {
         margin-top: 10px;
     }
-    .nav-bar, .banner-form, .popular-tour-section {
+    .nav-bar, .banner-form, .popular-tour-section, .destination-layout .row{
         flex-direction: column;
         margin-top: 30px;
       }
@@ -179,9 +176,17 @@ header, .popular-tour-section, .destination-section {
         padding: 20px;
         width: auto;
     }
+    .popular-tour-section{
+        margin-bottom: 50px;
+    }
     .popular-tour-photo img{
         height: 400px;
         width: 384px;
     }
+
+    .destination-layout .row{
+        height: auto;
+    }
+
 
 }
