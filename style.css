@@ -34,7 +34,8 @@
 header,
 .popular-tour-section,
 .destination-section,
-.choose-us {
+.choose-us,
+.newsletter {
   padding: 0 150px;
 }
 
@@ -117,7 +118,7 @@ header,
   width: 160px;
 }
 
-.popular-tour-section {
+.popular-tour-section, .newsletter {
   display: flex;
   gap: 50px;
   margin: 120px 0;
@@ -176,13 +177,32 @@ header,
 .card-container .card:nth-child(3) {
   margin-left: 25%;
 }
-.card-container .card .card-title {
+.card-container .card .card-title, .newsletter-title {
   color: var(--primary-color);
   font-size: 1.5rem;
   font-weight: 800;
   margin-top: 10px;
 }
 
+/*Newsletter styles*/
+.newletter-form{
+  border: 1px solid #ff5400;
+  border-radius: 16px;
+  padding: 30px;
+}
+.newletter-form input{
+  border: none;
+  border-radius: 8px;
+background: rgba(19, 19, 24, 0.05);
+  padding: 15px;
+  margin: 10px 0;
+  width: 90%;
+}
+.newletter-form button{
+  padding: 15px;
+  margin-top: 15px;
+  width: 102%;
+}
 /*Responsiveness for smaller devices*/
 @media screen and (max-width: 600px) {
   header,
