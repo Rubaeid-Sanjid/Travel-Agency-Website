@@ -66,6 +66,7 @@ header,
   color: var(--primary-color);
 }
 
+/* Banner section styles */
 .banner {
   padding: 0 150px;
   margin: 50px 0;
@@ -218,6 +219,7 @@ header,
   margin-top: 15px;
   width: 100%;
 }
+
 .newsletter .newsletter-photo img {
   height: 100%;
   width: 100%;
@@ -229,6 +231,41 @@ header,
   bottom: 28%;
   transform: rotate(-19.628deg);
 }
+
+/*Footer section styles*/
+footer{
+  width: 100%;
+  height: 400px;
+  background: rgba(19, 19, 24, 0.05);
+  margin-top: 100px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+footer section{
+  padding: 0 150px;
+}
+footer .section-title{
+  font-size: 2rem;
+}
+footer .footer-title{
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+}
+footer .social-links{
+  margin: 30px 0;
+}
+footer .social-links a{
+  margin: 0px 20px;
+  color: var(--primary-color);
+  font-size: 1.5rem;
+}
+footer hr{
+  border-color: rgba(19, 19, 24, 0.10);
+  margin-bottom: 30px;
+}
+
 /*Responsiveness for smaller devices*/
 @media screen and (max-width: 600px) {
   header,
@@ -237,7 +274,8 @@ header,
   .destination-section,
   .choose-us,
   .choose-us .choose-us-content,
-  .newsletter {
+  .newsletter,
+  footer section {
     padding: 0 20px;
   }
   .nav-links ul {
@@ -285,7 +323,7 @@ header,
   }
 
   .choose-us {
-    margin-top: 30px;
+    margin-top: 50px;
   }
   .card-container .card {
     width: auto;
@@ -294,11 +332,25 @@ header,
     margin-left: auto;
   }
 
+  .newsletter{
+    height: auto;
+    margin-bottom: 30px;
+  }
   .newletter-form{
     width: auto;
   }
+  .newsletter-photo{
+    height: 325px;
+  }
   .newsletter .newsletter-photo .badge {
     left: 40%;
-    bottom: 36%;
+    bottom: 110px;
+  }
+  .newsletter .newsletter-photo img {
+    height: 300px;
+  }
+
+  footer{
+    margin-top: 30px;
   }
 }
