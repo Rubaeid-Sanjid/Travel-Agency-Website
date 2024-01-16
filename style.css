@@ -207,7 +207,7 @@ header,
   background: rgba(19, 19, 24, 0.05);
   padding: 15px;
   margin: 5px 0;
-  width: 90%;
+  width: 92%;
 }
 .newletter-form hr {
   margin: 25px 0;
@@ -220,11 +220,12 @@ header,
 }
 .newsletter .newsletter-photo img {
   height: 100%;
+  width: 100%;
 }
 .newsletter .newsletter-photo .badge {
   width: 150px;
   position: relative;
-  left: 66%;
+  left: 62%;
   bottom: 28%;
   transform: rotate(-19.628deg);
 }
@@ -235,7 +236,8 @@ header,
   .popular-tour-section,
   .destination-section,
   .choose-us,
-  .choose-us .choose-us-content {
+  .choose-us .choose-us-content,
+  .newsletter {
     padding: 0 20px;
   }
   .nav-links ul {
@@ -245,7 +247,8 @@ header,
   .banner-form,
   .popular-tour-section,
   .destination-layout .row,
-  .card-container {
+  .card-container,
+  .newsletter {
     flex-direction: column;
     margin-top: 30px;
   }
@@ -289,5 +292,13 @@ header,
   }
   .card-container .card:nth-child(3) {
     margin-left: auto;
+  }
+
+  .newletter-form{
+    width: auto;
+  }
+  .newsletter .newsletter-photo .badge {
+    left: 40%;
+    bottom: 36%;
   }
 }
