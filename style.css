@@ -145,7 +145,17 @@ header,
   display: flex;
   margin-top: 20px;
   gap: 20px;
-  height: 250px;
+  height: 270px;
+}
+.photo-text-container {
+  position: relative;
+}
+.destination-layout .row .photo-text{
+  position: absolute;
+  right: 35%;
+  top: 40%;
+  color:#fff;
+  font-size: 1.8rem;
 }
 .destination-layout .row img {
   height: 100%;
