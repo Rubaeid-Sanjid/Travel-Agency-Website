@@ -30,12 +30,14 @@
   font-weight: 700;
   font-size: 1rem;
   border: none;
+  cursor: pointer;
 }
 header,
 .popular-tour-section,
 .destination-section,
 .choose-us,
-.newsletter {
+.newsletter,
+.deals-discount {
   padding: 0 150px;
 }
 
@@ -118,6 +120,12 @@ header,
   border: none;
   width: 160px;
 }
+.banner .banner-form button{
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+  gap: 5px;
+}
 
 /*Popular Tours section styles*/
 .popular-tour-section {
@@ -150,11 +158,11 @@ header,
 .photo-text-container {
   position: relative;
 }
-.destination-layout .row .photo-text{
+.destination-layout .row .photo-text {
   position: absolute;
   right: 35%;
   top: 40%;
-  color:#fff;
+  color: #fff;
   font-size: 1.8rem;
 }
 .destination-layout .row img {
@@ -163,7 +171,7 @@ header,
 }
 
 /*Why Choose Us section style*/
-.choose-us {
+.choose-us, .deals-discount {
   margin-top: 120px;
 }
 .choose-us .choose-us-content {
@@ -197,6 +205,52 @@ header,
   font-size: 1.5rem;
   font-weight: 800;
   margin-top: 10px;
+}
+
+/* Deals & discount section styles */
+.discount-content {
+  text-align: center;
+  padding: 0 120px;
+}
+.discount-card {
+  position: relative;
+  margin-top: 30px;
+  height: 500px;
+}
+.discount-card img {
+  height: 100%;
+  width: 100%;
+}
+.deals-discount .card-content {
+  width: 40%;
+  height: 60%;
+  padding: 50px;
+  border-radius: 16px;
+  border: 2px solid #fff;
+  background: rgba(255, 255, 255, 0.8);
+  position: absolute;
+  bottom: 10%;
+  left: 45%;
+  backdrop-filter: blur(2.5px);
+}
+.deals-discount .left-content {
+  left: 5%;
+}
+.deals-discount .card-content .schedules{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+ margin-bottom: 20px;
+}
+.deals-discount .card-content .schedules h4{
+  margin-bottom: 15px;
+}
+.deals-discount .card-content .price{
+  color: #FF5400;
+font-size: 20px;
+font-weight: 800;
+margin: 15px 0;
 }
 
 /*Newsletter styles*/
@@ -240,10 +294,11 @@ header,
   left: 62%;
   bottom: 28%;
   transform: rotate(-19.628deg);
+  cursor: default;
 }
 
 /*Footer section styles*/
-footer{
+footer {
   width: 100%;
   height: 400px;
   background: rgba(19, 19, 24, 0.05);
@@ -252,27 +307,27 @@ footer{
   display: flex;
   align-items: center;
 }
-footer section{
+footer section {
   padding: 0 150px;
 }
-footer .section-title{
+footer .section-title {
   font-size: 2rem;
 }
-footer .footer-title{
+footer .footer-title {
   display: flex;
   gap: 5px;
   justify-content: center;
 }
-footer .social-links{
+footer .social-links {
   margin: 30px 0;
 }
-footer .social-links a{
+footer .social-links a {
   margin: 0px 20px;
   color: var(--primary-color);
   font-size: 1.5rem;
 }
-footer hr{
-  border-color: rgba(19, 19, 24, 0.10);
+footer hr {
+  border-color: rgba(19, 19, 24, 0.1);
   margin-bottom: 30px;
 }
 
@@ -285,7 +340,9 @@ footer hr{
   .choose-us,
   .choose-us .choose-us-content,
   .newsletter,
-  footer section {
+  footer section,
+  .deals-discount,
+  .discount-content {
     padding: 0 20px;
   }
   .nav-links ul {
@@ -342,14 +399,33 @@ footer hr{
     margin-left: auto;
   }
 
-  .newsletter{
+  .deals-discount .card-content {
+    width: 84%;
+    height: 60%;
+    padding: 10px;
+    bottom: 5%;
+    left: 5%;
+  }
+  .deals-discount .card-content .schedules{
+   margin-bottom: 10px;
+   flex-wrap: wrap;
+   gap: 5px;
+  }
+  .deals-discount .card-content .schedules h4{
+    margin-bottom: 8px;
+  }
+  .deals-discount .card-content .price{
+  margin: 8px 0;
+  }
+
+  .newsletter {
     height: auto;
     margin-bottom: 30px;
   }
-  .newletter-form{
+  .newletter-form {
     width: auto;
   }
-  .newsletter-photo{
+  .newsletter-photo {
     height: 325px;
   }
   .newsletter .newsletter-photo .badge {
@@ -360,7 +436,7 @@ footer hr{
     height: 300px;
   }
 
-  footer{
+  footer, .deals-discount {
     margin-top: 30px;
   }
 }
